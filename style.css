@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #e94b20;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.navbar h1 {
+    font-size: 27px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background: #ffe5d5;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #c83716;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.order-btn {
+    display: inline-block;
+    background: #e94b20;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-section,
+.cart-section {
+    padding: 45px 8%;
+    text-align: center;
+}
+
+.menu-section h2,
+.cart-section h2 {
+    margin-bottom: 25px;
+    color: #c83716;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+}
+
+.food-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+    transition: transform 0.2s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-image {
+    font-size: 65px;
+    padding: 10px;
+}
+
+.food-card h3 {
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #e94b20;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+button {
+    background: #e94b20;
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #bd3514;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #333;
+    outline-offset: 3px;
+}
+
+.cart-section {
+    background: #fff0e6;
+}
+
+#cart-items {
+    list-style: none;
+    max-width: 550px;
+    margin: 0 auto 20px;
+}
+
+#cart-items li {
+    background: white;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+#cart-total {
+    color: #c83716;
+}
+
+#message {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .menu-section,
+    .cart-section {
+        padding: 30px 5%;
+    }
+}
